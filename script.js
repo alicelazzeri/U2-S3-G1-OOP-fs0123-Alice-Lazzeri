@@ -8,13 +8,13 @@ class User {
     this.location = location;
   }
 
-  ageConfront(x, y) {
-    if (x.age > y.age) {
-      return x.first.Name + " è più vecchio di " + y.first.name;
-    } else if (x.age < y.age) {
-      return x.firstName + "è più giovane di " + y.firstName;
+    ageConfront(a, b) {
+    if (a.age > b.age) {
+      return a.first.Name + " è più vecchio di " + b.first.name;
+    } else if (a.age < b.age) {
+      return a.firstName + "è più giovane di " + b.firstName;
     } else {
-      return x.firstName + " e " + y.firstName + " sono coetanei";
+      return a.firstName + " e " + b.firstName + " sono coetanei";
     }
   }
 }
@@ -31,4 +31,4 @@ console.log(userThree);
 const userFour = new User("Edoardo", "Zilioli", 28, "La Spezia");
 console.log(userFour);
 
-
+console.log(User.ageConfront(userOne, userTwo));
