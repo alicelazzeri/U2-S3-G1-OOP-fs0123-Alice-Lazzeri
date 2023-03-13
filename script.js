@@ -10,7 +10,7 @@ class User {
 
     ageConfront(a, b) {
     if (a.age > b.age) {
-      return a.first.Name + " è più vecchio di " + b.first.name;
+      return a.firstName + " è più vecchio di " + b.firstname;
     } else if (a.age < b.age) {
       return a.firstName + "è più giovane di " + b.firstName;
     } else {
@@ -32,3 +32,5 @@ const userFour = new User("Edoardo", "Zilioli", 28, "La Spezia");
 console.log(userFour);
 
 console.log(User.ageConfront(userOne, userTwo));
+console.log(User.ageConfront(userThree, userTwo));
+console.log(User.ageConfront(userTwo, userFour));
